@@ -312,19 +312,21 @@ Pandas	2.2.3
 Scikit-Learn	1.5.1
 Seaborn	0.13.2
 Project Structure
-├── data/               # Raw/processed data  
+├── dados/              # Raw/processed data  
 ├── models/             # Trained models  
 ├── notebooks/          # Jupyter notebooks  
-├── src/                # Source code  
-│   ├── __init__.py  
-│   ├── helpers.py      # Utility functions  
-│   ├── config.py       # Project settings  
-│   ├── plots.py        # Visualization scripts  
-│   └── models.py       # Model training  
-├── reports/            # Analysis outputs  
-│   └── images/         # Graphs/figures  
-├── environment.yml     # Conda environment  
+│   └── src/                # Source code  
+│       ├── __init__.py  
+│       ├── auxiliares.py   # Utility functions  
+│       ├── config.py       # Project settings  
+│       ├── graficos.py     # Visualization scripts  
+│       └── models.py       # Model training  
+├── relatorios/         # Analysis outputs  
+│   └── imagens/        # Graphs/figures  
+├── ambiente.yml        # Conda environment  
+├── references/         # information about the database, data dictionary
 └── requirements.txt    # Pip dependencies  
+
 Setup Instructions
 Clone the repository:
 
