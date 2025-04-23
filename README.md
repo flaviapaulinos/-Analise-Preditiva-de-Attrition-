@@ -1,5 +1,5 @@
 # 📌 Análise Preditiva de Attrition 
-![analise](relatorios/imagens/countplot.png)
+![comparativo](relatorios/imagens/comparativo.png)
 
 
 PT
@@ -43,7 +43,7 @@ StandardScaler: Para Idade (distribuição próxima da normal).
 PowerTransformer: Para outras variáveis numéricas.
 
 ## ⚙️ Modelos Testados
-![comparativo](relatorios/imagens/comparativo.png)
+
 
 Modelo	Ajustes Especiais	Melhor Métrica (Avg Precision)
 LogisticRegression	class_weight='balanced', GridSearch (C, penalty)	0.61
@@ -81,7 +81,7 @@ Funcionários que não viajam têm 61% menos chance de deixar a empresa
 
 Funcionários com a renda mensal alta tem  36% menos chance de deixar a empresa
 
-
+![analise](relatorios/imagens/countplot.png)
 
 ## 📌 Conclusão
 
