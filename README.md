@@ -46,11 +46,17 @@ PowerTransformer: Para outras variáveis numéricas.
 
 
 Modelo	Ajustes Especiais	Melhor Métrica (Avg Precision)
+
 LogisticRegression	class_weight='balanced', GridSearch (C, penalty)	0.61
+
 LGBMClassifier	scale_pos_weight=5.2	0.51
+
 XGBClassifier	scale_pos_weight=5.2	0.46
+
 SGDClassifier	-	0.58
+
 SVC	-	0.63
+
 DecisionTree	class_weight='balanced'	0.226
 
 ## 📉 Resultados
@@ -89,10 +95,13 @@ A Regressão Logística teve o melhor desempenho, equilibrando recall e precisã
 
 Técnicas de balanceamento (ROS, SMOTE-Tomek) não melhoraram os resultados.
     
-    Algumas considerações a respeito:
+Algumas considerações a respeito:
     
-        • Criticidade de outliers: Em problemas como attrition, casos raros (ex: um funcionário de alto desempenho que saiu) podem ser importantes, e SMOTE/ROS podem diluir seu impacto.
-        • O modelo original (não balanceado) pode ter mantido melhor a capacidade de identificar padrões genuínos.
+ • Criticidade de outliers: 
+        
+Em problemas como attrition, casos raros (ex: um funcionário de alto desempenho que saiu) podem ser importantes, e SMOTE/ROS podem diluir seu impacto.
+        
+• O modelo original (não balanceado) pode ter mantido melhor a capacidade de identificar padrões genuínos.
 
 Variáveis como hora extra, viagens e estado civil são críticas para prever attrition.
 
