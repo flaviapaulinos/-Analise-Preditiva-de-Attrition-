@@ -99,13 +99,13 @@ Algumas considerações a respeito:
     
  • Criticidade de outliers: 
         
-Em problemas como attrition, casos raros (ex: um funcionário de alto desempenho que saiu) podem ser importantes, e SMOTE/ROS podem diluir seu impacto.
+    Em problemas como attrition, casos raros (ex: um funcionário de alto desempenho que saiu) podem ser importantes, e SMOTE/ROS podem diluir seu impacto.
         
 • O modelo original (não balanceado) pode ter mantido melhor a capacidade de identificar padrões genuínos.
 
-Variáveis como hora extra, viagens e estado civil são críticas para prever attrition.
+    Variáveis como hora extra, viagens e estado civil são críticas para prever attrition.
 
-A aplicação do modelo para a previsão de attrition foi feita através do Streamlit, tornando o processo mais simples e intuitivo. Além disso, o app permite a visualização da probabilidade de attrition para cada caso.
+ • A aplicação do modelo para a previsão de attrition foi feita através do Streamlit, tornando o processo mais simples e intuitivo. Além disso, o app permite a visualização da probabilidade de attrition para cada caso.
 
 ['Clique aqui para "Análise Preditiva de Attrition" '](https://predictive-attrition-analysis-fbps.streamlit.app/)
 ![Imagem](relatorios/imagens/streamlit.png)
