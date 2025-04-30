@@ -85,7 +85,7 @@ medianas_colunas_ignoradas = {
     coluna: df[coluna].median() for coluna in colunas_ignoradas
 }
 
-st.title("Previsão de Atrito")
+st.title("Previsão de Attrition")
 
 with st.container(border=True):
     st.write("### Informações pessoais")
@@ -243,7 +243,7 @@ entrada_modelo = {
 df_entrada_modelo = pd.DataFrame([entrada_modelo])
 #além da previsão eu quero um valor de probabilidade associado:
 
-botao_previsao = st.button("Prever Atrito")
+botao_previsao = st.button("Prever Attrition")
 
 if botao_previsao:
     previsao = modelo.predict(df_entrada_modelo)[0]
@@ -253,9 +253,9 @@ if botao_previsao:
     cor = ":red" if previsao == 1 else ":green"
 
     texto_probabilidade = (
-        f"#### Probabilidade de Atrito: {cor}[{probabilidade_atrito:.1%}]"
+        f"#### Probabilidade de Attrition: {cor}[{probabilidade_atrito:.1%}]"
     )
-    texto_atrito = f"#### Atrito: {cor}[{'Sim' if previsao == 1 else 'Não'}]"
+    texto_atrito = f"#### Attrition: {cor}[{'Sim' if previsao == 1 else 'Não'}]"
 
     st.markdown(texto_atrito)
     st.markdown(texto_probabilidade)
